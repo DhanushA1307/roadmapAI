@@ -1,6 +1,10 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { Link } from "react-router-dom";
 import React from "react";
+=======
+// import React from "react";
+>>>>>>> Stashed changes
 =======
 // import React from "react";
 >>>>>>> Stashed changes
@@ -29,6 +33,10 @@ const Navbar = () => {
   );
 };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
