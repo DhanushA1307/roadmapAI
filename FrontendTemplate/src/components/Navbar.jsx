@@ -10,6 +10,8 @@ const Navbar = () => {
         <Link to="/about">About</Link>
         <Link to="/another">Another</Link>
         <Link to="/contact">Contact</Link>
+        <button type="submit" className="btn btn-secondary">Login</button>
+        <button type="submit" className="btn btn-primary">SignUp</button>
       </ul>
     </nav>
   );
