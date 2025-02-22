@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 import { Link } from "react-router-dom";
 import React from "react";
+=======
+// import React from "react";
+>>>>>>> Stashed changes
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -24,4 +28,8 @@ const Navbar = () => {
     </nav>
   );
 };
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 export default Navbar;
