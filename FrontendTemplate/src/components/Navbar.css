@@ -1,5 +1,5 @@
 nav {
-    background-color: #fffdfd; /* Dark navbar */
+    background-color: #fffdfd; 
     padding: 1rem;
 }
   
@@ -17,6 +17,7 @@ nav ul {
   justify-content: center;
   gap: 1rem;
   padding-bottom: 15px;
+  margin-top: 20px;
 }
   
 nav ul a {
