@@ -2,7 +2,7 @@ import React from 'react'
 
 const Another = () => {
   return (
-    <div>
+    <div className='about-container'>
       <h1>Hello Another</h1>
     </div>
   )

@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './About.css'
 const About = () => {
   return (
-    <div>
-      <h1>Hello About</h1>
+    <div className='about-container'>
+      <h1>We are generating your Prompt into Roadmap for the Educational Purpose</h1>
     </div>
   )
 }

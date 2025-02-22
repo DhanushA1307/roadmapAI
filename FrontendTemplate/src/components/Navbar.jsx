@@ -2,9 +2,15 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
+  
+  const titleStyle = {
+    fontSize: "60px",
+    paddingTop: "50px",
+    textAlign:"center"
+  };
+  
   return (
     <nav>
-      <h1>RoadmapAI</h1>
       <ul>
         <Link to="/home">Home</Link>
         <Link to="/about">About</Link>
@@ -13,6 +19,7 @@ const Navbar = () => {
         <button type="submit" className="btn btn-secondary">Login</button>
         <button type="submit" className="btn btn-primary">SignUp</button>
       </ul>
+      <h1 style={titleStyle}>Roadmap AI</h1>
     </nav>
   );
 };
