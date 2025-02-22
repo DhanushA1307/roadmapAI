@@ -19,7 +19,11 @@ const Navbar = () => {
         <button type="submit" className="btn btn-secondary">Login</button>
         <button type="submit" className="btn btn-primary">SignUp</button>
       </ul>
-      <h1 style={titleStyle}>Roadmap AI</h1>
+      <h1 style={titleStyle}>
+        <span className="text-secondary" style={{fontWeight: "bold" }}>Road</span>
+        <span style={{fontWeight: "bold" }}>map</span>
+        <span style={{ color: "#3046ed", fontWeight: "bold" }}>AI</span>
+      </h1>
     </nav>
   );
 };
