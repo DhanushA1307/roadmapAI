@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
+import { isAuthenticated } from "../AuthService";
+import Logout from "./Logout";
 const Navbar = () => {
   const navigate = useNavigate();
   const titleStyle = {
@@ -8,20 +10,28 @@ const Navbar = () => {
     paddingTop: "50px",
     textAlign:"center"
   };
+  const [authStatus, setAuthStatus] = useState(false);
+  
+    useEffect(() => {
+      setAuthStatus(isAuthenticated());
+    }, []);
   
   return (
     <nav>
       <ul>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/another">Another</Link>
         <Link to="/contact">Contact</Link>
-        {/* {isAuth &&
-        <> */}
+        {authStatus ?
+        <>
             <button type="submit" className="btn btn-secondary" onClick={()=>navigate("/login")}>Login</button>
             <button type="submit" className="btn btn-primary" onClick={()=>navigate("/register")}>SignUp</button>
-        {/* </>
-        } */}
+        </>
+        :
+        <Logout/>
+        // <></>
+        }
         </ul>
       <h1 style={titleStyle}>
         <span style={{fontWeight: "bold"}} className="text-secondary" >Road</span>
